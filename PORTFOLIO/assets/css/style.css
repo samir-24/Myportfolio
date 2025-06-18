@@ -1,0 +1,239 @@
+:root {
+  --text-orange: #ff9330;
+  --text-orange-rgb: 255, 147, 48;
+  --text-dark: #080808;
+  --text-primary: 'Syne';
+  --text-secondary: 'DM Sans';
+  --text-white: #ffff;
+  --text-white-rgb: 255, 255, 255;
+}
+
+body {
+  font-family: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 16px 28px;
+  border-radius: 8px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.py-100 {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+
+.mb-100{
+  margin-bottom: 100px;
+}
+.dm-sans {
+  font-family: 'DM Sans';
+}
+
+.orange {
+  color: #ff9330;
+}
+
+/* topbar section  */
+
+.topbar::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  background-color: rgba(var(--bs-black-rgb), .3);
+  bottom: 0;
+  left: 5%;
+}
+
+/* hero section start  */
+
+.bg {
+  background-color: #ffe9d9;
+  background-image: url('../images/hero/hero-image.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.banner-content h1 {
+  font-size: 140px;
+}
+
+.hero button span {
+  font-family: var(--text-secondary);
+}
+
+
+
+
+/* hero sectioon end  */
+
+.services span,
+.about-content>span,
+.testimonial .title span,
+.pricing .title span,
+.price-box span:nth-of-type(2),
+.foot-box a,
+.work .title span,
+.blog .title span {
+  color: var(--text-orange);
+  font-size: 20px;
+}
+
+/* price section  */
+
+.price-box,
+.foot-box {
+  background-color: #0808080f;
+  border-radius: 16px;
+  transition: all 0.2s linear;
+  margin: 0px 10px;
+}
+
+.price-box:hover,
+.service-box:hover {
+  background-color: #fff;
+  box-shadow: 0px 36px 100px 0px rgba(8, 8, 8, 0.15);
+}
+
+/* services section  */
+
+.service-box:hover .service-name span,
+.service-box:hover .service-name,
+.service-box:hover .service-icon i,
+.blog-content:hover i {
+  color: #ff9330 !important;
+  transition: all 0.3s ease;
+}
+
+/* resume section  */
+
+.resume,
+.service-box {
+  background-color: rgba(8, 8, 8, 0.09) !important;
+}
+
+.details li span {
+  display: inline-block;
+  width: 120px;
+}
+
+.resume button {
+  border-radius: 10px;
+}
+
+.resume .resume-btns button:hover i {
+  color: white !important;
+}
+
+/* work section  */
+
+.btn-black:hover {
+  border: 1px solid black;
+}
+
+.work {
+  background-color: #ffe9d9;
+}
+
+.work-box .work-btn a {
+  border: #080808;
+}
+
+/* blog section  */
+
+.blog ul {
+  list-style-type: disc;
+}
+
+/* footer  */
+
+.foot-box {
+  border: 1px solid rgba(var(--text-orange-rgb), 0.3);
+  height: 209px;
+}
+
+footer .name h5 {
+  font-family: Orbitron;
+  font-weight: 900;
+  font-size: 72px;
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+}
+
+footer .name {
+  border-bottom: 1px solid rgba(var(--text-white-rgb), .2);
+}
+
+.hover-orange:hover {
+  color: #ff9330 !important;
+  transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+  background-color: transparent !important;
+  color: var(--bs-black-rgb) !important;
+  transition: all 0.3s ease;
+}
+
+.btn-transparent:hover {
+  background-color: var(--bs-black) !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+/* offcanvas section  */
+.offcanvas{
+  background-color: #ffe9d9;
+}
+
+
+/*  arrow icon styling */
+.arrow i {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/*  arrow fly  */
+.hover-link:hover .arrow i {
+  transform: translate(10px, -10px);
+}
+
+
+.circle-text {
+    background-color: orange;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* responsive css  */
+.container {
+  overflow-x: hidden;
+}

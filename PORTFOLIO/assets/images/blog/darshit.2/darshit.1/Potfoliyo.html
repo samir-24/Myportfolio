@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icons/favicon.svg" type="image/png">
+    <title>Navbar with Left Toggle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <!-- Left toggle button -->
+        <button class="btn btn-dark me-3" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+            <img src="./img/icons/favicon.svg" alt="Logo" width="30" height="30" class="me-2">
+            <span class="fw-light">Darshit.<strong>design</strong></span>
+        </a>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="d-flex align-items-center gap-3 ms-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-dark text-white p-3"
+        style="display: none; width: 250px; position: fixed; top: 0; left: 0; height: 100vh; z-index: 1050;">
+
+        <!-- Close Button -->
+        <div class="d-flex justify-content-end">
+            <button id="closeSidebar" class="btn btn-sm btn-light mb-3">&times;</button>
+        </div>
+
+        <h5 class="mb-4">Sidebar Menu</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Settings</a></li>
+        </ul>
+    </div>
+
+
+    <!-- main -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Left -->
+                <div class="col-md-6 col-sm-12 text-white">
+                    <p class="mb-2"><span class="emoji">👋 </span> Hi there, I'm Darshit</p>
+                    <h1 class="fw-bold display-5">
+                        Crafting Intuitive<br>
+                        <span class="text-purple">Digital Experiences</span>
+                    </h1>
+                    <p class="text-muted mt-3 mb-4 ">I assist individuals and brands in achieving their objectives by
+                        creating and developing user-focused digital products and interactive experiences.</p>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="#" class="btn btn-primary px-4 py-2">Download CV</a>
+                        <a href="#" class="btn btn-outline-light px-4 py-2">Hire me</a>
+                    </div>
+
+                    <p class="text-muted mb-2">+1 years with professional design software</p>
+                    <div class="d-flex gap-3 mt-2">
+                        <img src="./img/icons/brand-1.png" height="35">
+                        <img src="./img/icons/brand-2.png" height="35">
+                        <img src="./img/icons/brand-3.png" height="35">
+                        <img src="./img/icons/brand-4.png" height="35">
+                        <img src="./img/icons/brand-5.png" height="35">
+                        <img src="./img/icons/brand-6.png" height="35">
+                    </div>
+                </div>
+
+                <!-- Image Right -->
+                <div class="col-md-6 col-sm-12
+                 position-relative mt-5 mt-md-0 text-center">
+
+                    <!-- Rotating shape, shifted left -->
+                    <div class="rotating-shape position-absolute top-50 start-50 translate-middle z-0">
+                        <img src="./img/main/decorate.png" class="darshit rotating img-fluid shift-left " width="300">
+                    </div>
+
+                    <!-- Main grayscale image -->
+                    <img src="./img/main/man.png" alt="Darshit"
+                        class="darshit grayscale-img position-absolute top-50 start-50 translate-middle img-fluid z-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row justify-content-center text-center gy-5">
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="highlight">+</span><span class="counter"
+                            data-target="1">0</span></div>
+                    <div class="stat-label">Year of <strong>Experience</strong></div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="highlight">+</span><span class="counter"
+                            data-target="20">0</span></div>
+                    <div class="stat-label">Projects <strong>Completed</strong></div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="highlight">+</span><span class="counter"
+                            data-target="18">0</span></div>
+                    <div class="stat-label">Satisfied <strong>Happy Clients</strong></div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="stat-number"><span class="highlight">+</span><span class="counter"
+                            data-target="10">50</span></div>
+                    <div class="stat-label">Awards <strong>Won Received</strong></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  -->
+
+
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+            <div>
+                <h2 class="section-title"><span class="text-purple">What do I offer?</span></h2>
+                <p class="text-muted mb-0">My journey started with banking But later on i switch to tech field,<br>lead
+                    me to specialize in Web design</p>
+            </div>
+            <a href="#" class="btn btn-quote mt-3 mt-md-0">Get a Quote ↗</a>
+        </div>
+
+        <div class="service-item d-flex justify-content-between align-items-center">
+            <div>
+                <div class="service-title"><span class="service-number">01.</span> Front End Developer</div>
+                <div class="service-desc">Creative and detail-oriented Front-End Developer skilled in crafting
+                    responsive, user-friendly interfaces using HTML, CSS, JavaScript, and modern frameworks like React
+                </div>
+            </div>
+            <a href="#" class="icon-link"><span class="arrow-icon">↗</span></a>
+        </div>
+
+        <div class="service-item d-flex justify-content-between align-items-center">
+            <div>
+                <div class="service-title"><span class="service-number">02.</span> Back End Developer</div>
+                <div class="service-desc">Efficient and analytical Backend Developer with expertise in building
+                    scalable, secure server-side applications using Node.js, Python, RESTful APIs, and database systems
+                    like MySQL and MongoDB.</div>
+            </div>
+            <a href="#" class="icon-link"><span class="arrow-icon">↗</span></a>
+        </div>
+
+        <div class="service-item d-flex justify-content-between align-items-center">
+            <div>
+                <div class="service-title"><span class="service-number">03.</span> Banking</div>
+                <div class="service-desc">Trusted banking facility provider delivering secure, efficient, and
+                    customer-focused financial solutions tailored to meet diverse client needs.
+                </div>
+            </div>
+            <a href="#" class="icon-link"><span class="arrow-icon">↗</span></a>
+        </div>
+
+        <div class="service-item d-flex justify-content-between align-items-center">
+            <div>
+                <div class="service-title"><span class="service-number">04.</span> Web Development</div>
+                <div class="service-desc">Crafting responsive and engaging websites that align with your brand and
+                    business goals.</div>
+            </div>
+            <a href="#" class="icon-link"><span class="arrow-icon">↗</span></a>
+        </div>
+
+    </div>
+
+
+    <!--  -->
+    <section>
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+                <div>
+                    <h2 class="section-title"><span class="text-purple">My Latest Works</span></h2>
+                    <p class="text-muted mb-0">I believe that working hard and trying to learn every day will<br> make
+                        me
+                        improve in satisfying my customers.</p>
+                </div>
+                <a href="#" class="btn btn-purple mt-3 mt-md-0">View All Projects ↗</a>
+            </div>
+
+            <div class="mb-4">
+                <button class="filter-btn active">All Projects</button>
+                <button class="filter-btn">Branding</button>
+                <button class="filter-btn">Web Design</button>
+                <button class="filter-btn">UI/UX</button>
+                <button class="filter-btn">App Dev</button>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <a href="file:///C:/Users/dell/Desktop/hoteler/index.html" target="_blank">
+                            <div class="project-img-wrapper">
+                                <img src="./img/project/hoteler.png" alt="Project 1">
+                            </div>
+                        </a>
+                        <div class="project-content d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="project-title">Photo Hoteler</div>
+                                <div class="project-subtitle">Latest Work</div>
+                            </div>
+                            <a href="#" class="project-link-icon">↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <a href="https://a-blog-post-eta.vercel.app/" target="_blank">
+                            <div class="project-img-wrapper">
+                                <img src="./img/project/blog-post.png" alt="Project 2">
+                            </div>
+                        </a>
+                        <div class="project-content d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="project-title">Mobile App Design</div>
+                                <div class="project-subtitle">Tech Innovators Inc.</div>
+                            </div>
+                            <a href="#" class="project-link-icon">↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="animated-btn">
+                View All Projects ↗
+            </button>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-start flex-wrap mb-5">
+            <div>
+                <h2 class="section-title"><span class="text-purple">My Resume</span></h2>
+                <p class="text-muted">I believe that working hard and trying to learn every day will<br> make me improve
+                    in satisfying my customers.</p>
+            </div>
+            <a href="#" class="btn btn-purple mt-3 mt-md-0">Get in touch <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+
+        <div class="row g-4">
+            <!-- Education -->
+            <div class="col-md-6">
+                <div class="resume-box">
+                    <div class="resume-header">
+                        <img src="./img/eud/icon-1.svg" alt=""> Education
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2018–2019 <span class="resume-rating">4.9/5</span></div>
+                        <div class="resume-title">Certification in UX Design</div>
+                        <div class="resume-sub">University of Stanford</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2017–2018 <span class="resume-rating">5.0/5</span></div>
+                        <div class="resume-title">Certification in Web Dev</div>
+                        <div class="resume-sub">University of Stanford</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2014–2016 <span class="resume-rating">4.9/5</span></div>
+                        <div class="resume-title">Advanced UX/UI Bootcamp</div>
+                        <div class="resume-sub">Design Academy</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2012–2013 <span class="resume-rating">4.8/5</span></div>
+                        <div class="resume-title">Certification in Graphic Design</div>
+                        <div class="resume-sub">Coursera</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="col-md-6">
+                <div class="resume-box">
+                    <div class="resume-header">
+                        <img src="./img/eud/icon-2.svg" alt=""> Experience
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2019 - Present</div>
+                        <div class="resume-title">Senior UI/UX Designer</div>
+                        <div class="resume-sub">Leader in Creative team</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2016 - 2019</div>
+                        <div class="resume-title">UI/UX Designer at BOS Agency</div>
+                        <div class="resume-sub">Tech Startup</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2014-2016</div>
+                        <div class="resume-title">Freelance UI/UX Designer</div>
+                        <div class="resume-sub">Self-Employed</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-date">2012 - 2014</div>
+                        <div class="resume-title">Junior UI Designer</div>
+                        <div class="resume-sub">Web Solutions team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <section class="testimonials-section py-5">
+        <div class="container position-relative">
+            <h2 class="text-center section-title text-purple mb-2">Client's Testimonials</h2>
+            <p class="text-center text-muted mb-5">
+                I believe that working hard and trying to learn every day will make me improve in satisfying my
+                customers.
+            </p>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-interval="5000">
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="testimonial-card p-4 rounded-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <img src="./img/New folder/logo-1.png" alt="Logo1" height="24">
+                                                <i class="bi bi-quote text-white fs-2"></i>
+                                            </div>
+                                            <div class="text-purple mb-2">★★★★★</div>
+                                            <p>“Attention to detail and design significantly improved our product
+                                                usability.”</p>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <img src="./img/New folder/avatar-1.png" class="rounded-circle me-3"
+                                                    width="48">
+                                                <div>
+                                                    <strong>John Doe</strong><br>
+                                                    <small class="text-muted">Tech Innovators</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="testimonial-card p-4 rounded-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <img src="./img/New folder/logo-1.png" alt="Logo2" height="24">
+                                                <i class="bi bi-quote text-white fs-2"></i>
+                                            </div>
+                                            <div class="text-purple mb-2">★★★★☆</div>
+                                            <p>“Darshit always delivers exceptional design work—fast and polished.”</p>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <img src="./img/New folder/avatar-2.png" class="rounded-circle me-3"
+                                                    width="48">
+                                                <div>
+                                                    <strong>Jane Smith</strong><br>
+                                                    <small class="text-muted">UX Studio</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="testimonial-card p-4 rounded-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <img src="./img/New folder/logo-1.png" alt="Logo3" height="24">
+                                                <i class="bi bi-quote text-white fs-2"></i>
+                                            </div>
+                                            <div class="text-purple mb-2">★★★★★</div>
+                                            <p>“Great collaboration. Easy to work with and full of creative ideas.”</p>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <img src="./img/New folder/avatar-1.png" class="rounded-circle me-3"
+                                                    width="48">
+                                                <div>
+                                                    <strong>Emily White</strong><br>
+                                                    <small class="text-muted">Creative Agency</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="testimonial-card p-4 rounded-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <img src="./img/New folder/logo-2.png" alt="Logo4" height="24">
+                                                <i class="bi bi-quote text-white fs-2"></i>
+                                            </div>
+                                            <div class="text-purple mb-2">★★★★☆</div>
+                                            <p>“Super professional. Design system was clean and scalable.”</p>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <img src="./img/New folder/avatar-2.png" class="rounded-circle me-3"
+                                                    width="48">
+                                                <div>
+                                                    <strong>Mark Davis</strong><br>
+                                                    <small class="text-muted">Startup X</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+                                    <div class="col-md-6 mx-auto">
+                                        <div class="testimonial-card p-4 rounded-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <img src="./img/New folder/logo-1.png" alt="Logo5" height="24">
+                                                <i class="bi bi-quote text-white fs-2"></i>
+                                            </div>
+                                            <div class="text-purple mb-2">★★★★★</div>
+                                            <p>“Our conversion rate improved after implementing his UX design.”</p>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <img src="./img/New folder/avatar-1.png" class="rounded-circle me-3"
+                                                    width="48">
+                                                <div>
+                                                    <strong>Anna Brown</strong><br>
+                                                    <small class="text-muted">SaaS Labs</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Carousel Dots -->
+                        <div class="text-center mt-4">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                class="dot active"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                                class="dot"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                                class="dot"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Darshit Image -->
+                <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                    <img src="./img/main/man.png" class="img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="py-5" style="background-color: #1e1e2f; color: #ffffff;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="fw-bold" style="color: #a88bfe;">Recent blog</h2>
+                    <p class="text-light">Explore the insights and trends shaping our industry</p>
+                </div>
+                <a href="#" class="btn btn-primary"
+                    style="background: linear-gradient(90deg, #a88bfe, #7c5cff); border: none;">
+                    View more <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Blog Card 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-0 shadow-sm" style="border-radius: 10px;">
+                        <img src="./img/project/blog-post.png" class="card-img-top" alt="UI/UX Trends">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2" style="background-color: #6c5ce7;">App Design</span>
+                            <p class="small text-muted">March 28, 2023 · 3 min read</p>
+                            <h6 class="fw-bold text-white">5 UI/UX Trends to Watch in 2024</h6>
+                            <p class="text-light small">Stay ahead of the curve with these emerging trends in UI/UX
+                                design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-0 shadow-sm" style="border-radius: 10px;">
+                        <img src="./img/project/hoteler.png" class="card-img-top" alt="User Research">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2" style="background-color: #6c5ce7;">Branding</span>
+                            <p class="small text-muted">March 28, 2023 · 3 min read</p>
+                            <h6 class="fw-bold text-white">The Importance of User Research</h6>
+                            <p class="text-light small">Stay ahead of the curve with these emerging trends in UI/UX
+                                design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 border-0 shadow-sm" style="border-radius: 10px;">
+                        <img src="./img/project/fundra.png" class="card-img-top" alt="Color Psychology">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2" style="background-color: #6c5ce7;">Mockup</span>
+                            <p class="small text-muted">March 28, 2023 · 3 min read</p>
+                            <h6 class="fw-bold text-white">The Role of Color Psychology</h6>
+                            <p class="text-light small">Stay ahead of the curve with these emerging trends in UI/UX
+                                design.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="py-5" style="background-color: #1e1e2f; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-5 mb-4">
+                    <h2 class="fw-bold" style="color: #a88bfe;">Get in touch</h2>
+                    <p class="text-light mb-4">I'm always excited to take on new projects and collaborate with
+                        innovative minds. If you have a project in mind or just want to chat about design, feel free to
+                        reach out!</p>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark p-2 rounded-3 me-3"><i class="bi bi-telephone-fill text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <small class="text-muted">Phone Number</small><br>
+                            <strong>+91-7573079169</strong>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark p-2 rounded-3 me-3"><i class="bi bi-envelope-fill text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <small class="text-muted">Email</small><br>
+                            <strong>khamardarshitd@gmail.com</strong>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark p-2 rounded-3 me-3"><i class="bi bi-skype text-purple fs-4"></i></div>
+                        <div>
+                            <small class="text-muted">Skype</small><br>
+                            <strong>DarshitDesignUX</strong>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start">
+                        <div class="bg-dark p-2 rounded-3 me-3"><i class="bi bi-geo-alt-fill text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <small class="text-muted">Address</small><br>
+                            <strong>A-21 prabudh society Ugat jahangirpura , Surat, Gujarat.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-7">
+                    <h4 class="fw-bold mb-4">Leave a message</h4>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label text-muted">Your name *</label>
+                                <input type="text" class="form-control bg-dark text-white border-0"
+                                    placeholder="Darshit Khamar">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted">Email address *</label>
+                                <input type="email" class="form-control bg-dark text-white border-0"
+                                    placeholder="khamardarshitd@gmail.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted">Your phone *</label>
+                                <input type="text" class="form-control bg-dark text-white border-0"
+                                    placeholder="+01 234 567 89">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-muted">Subject *</label>
+                                <input type="text" class="form-control bg-dark text-white border-0"
+                                    placeholder="I want to contact for...">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-muted">Message *</label>
+                                <textarea class="form-control bg-dark text-white border-0" rows="5"
+                                    placeholder="Your message here..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn text-white mt-2"
+                                    style="background: linear-gradient(to right, #a88bfe, #7c5cff);">
+                                    Send Message <i class="bi bi-arrow-up-right ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="footer py-5 text-center" style="background-color: #1e1e2f;">
+        <div class="container">
+            <!-- Logo -->
+            <div class="mb-3">
+                <img src="./img/icons/favicon.svg" alt="Darshit.design logo" style="height: 40px;">
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Portfolio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Contact</a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <p class="text-light mb-0">
+                &copy; 2024 All Rights Reserved by
+                <a href="#" class="text-decoration-none" style="color: #a88bfe;">Darshit.design</a>
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const toggle = document.getElementById("sidebarToggle");
+        const sidebar = document.getElementById("sidebar");
+        toggle.addEventListener("click", () => {
+            sidebar.style.display = sidebar.style.display === "none" ? "block" : "none";
+        });
+
+        const counters = document.querySelectorAll('.counter');
+        let started = false;
+
+        function startCount() {
+            if (started) return;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const speed = 1000; // 1s animation
+                const increment = target / speed * 10;
+
+                let count = 0;
+                const update = () => {
+                    count += increment;
+                    if (count < target) {
+                        counter.textContent = Math.floor(count);
+                        requestAnimationFrame(update);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                update();
+            });
+
+            started = true;
+        }
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('.stats-section');
+            if (isInViewport(section)) {
+                startCount();
+            }
+        });
+
+
+
+        // Toggle open
+        document.getElementById("sidebarToggle").addEventListener("click", function () {
+            document.getElementById("sidebar").style.display = "block";
+        });
+
+        // Close with X button
+        document.getElementById("closeSidebar").addEventListener("click", function () {
+            document.getElementById("sidebar").style.display = "none";
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
